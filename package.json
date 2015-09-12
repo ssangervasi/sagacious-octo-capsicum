@@ -1,0 +1,22 @@
+{
+  "name": "ssangervasi.com",
+  "version": "0.0.0",
+  "description": "Personal website workspace.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ssangervasi/sagacious-octo-capsicum.git"
+  },
+  "keywords": [
+    "angularjs",
+    "workspace"
+  ],
+  "author": "Sebastian Sangervasi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssangervasi/sagacious-octo-capsicum/issues"
+  }
+}
