@@ -13,18 +13,25 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				//Include all javascript files
-				src: ['src/**/*.js'],
+				src: ['lib/**/*.js', 'src/**/*.js'],
 				//Use package.json name for output file
 				dest: 'dist/<%= pkg.name %>.js'
+			}
+		},
+		copy: {
+			main: {
+				src: 'src/index.html',
+				dest: 'dist/index.html'
 			}
 		}
 		//TODO: uglify, lint, run tests		
 	});
 	/* -- Load tasks -- */
-		grunt.loadNpmTasks('grunt-bower-task');
+	grunt.loadNpmTasks('grunt-bower-task');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	/* -- Register tasks for running -- */
-	grunt.registerTask('default', ['bower', 'concat']);
+	grunt.registerTask('default', ['bower', 'concat', 'copy']);
 	
 };
 
