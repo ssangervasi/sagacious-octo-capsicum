@@ -8,12 +8,12 @@ module.exports = function(grunt) {
 		},
 		concat: {
 			options: {
-				//Putting in a js comment for debuggin purposes
+				//Putting in a js comment for debugging purposes
 				separator: ';/*Separator*/;'
 			},
 			dist: {
 				//Include all javascript files
-				src: ['lib/**/*.js', 'src/**/*.js'],
+				src: ['lib/angular/angular.js', 'lib/**/*.js', 'src/**/*.js'],
 				//Use package.json name for output file
 				dest: 'dist/<%= pkg.name %>.js'
 			}
