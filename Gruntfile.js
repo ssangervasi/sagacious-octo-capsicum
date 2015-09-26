@@ -13,7 +13,11 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				//Include all javascript files
-				src: ['lib/angular/angular.js', 'lib/**/*.js', 'src/**/*.js'],
+				src: [
+				    'lib/angular/angular.js',
+				    'lib/**/*.js',
+				    'src/**/*.js'
+				],
 				//Use package.json name for output file
 				dest: 'dist/<%= pkg.name %>.js'
 			}
@@ -31,7 +35,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	/* -- Register tasks for running -- */
-	grunt.registerTask('default', ['bower', 'concat', 'copy']);
+	//Default to Bear Necessities
+	grunt.registerTask('default', ['concat', 'copy']);
+	//Full install, etc.
+	grunt.registerTask('full', ['bower', 'concat', 'copy']);
 	
 };
 
