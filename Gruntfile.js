@@ -3,23 +3,34 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		bower: {
-			install: {
-			}
+			install: {}
 		},
 		concat: {
-			options: {
-				//Putting in a js comment for debugging purposes
-				separator: ';/*Separator*/;'
-			},
-			dist: {
+			js: {
+				options: {
+					stripBanners: true,
+					banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+									'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
+				},
 				//Include all javascript files
 				src: [
-				    'lib/angular/angular.js',
-				    'lib/**/*.js',
-				    'src/**/*.js'
+						'lib/angular/angular.js',
+						'lib/**/*.js',
+						'src/**/*.js'
 				],
 				//Use package.json name for output file
 				dest: 'dist/<%= pkg.name %>.js'
+			},
+			css: {
+				options: {
+					stripBanners: true,
+					banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+									'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
+				},
+				src: [
+					'src/**/*.css'
+				],
+				dest: 'dist/<%= pkg.name %>.css'
 			}
 		},
 		copy: {
@@ -41,4 +52,3 @@ module.exports = function(grunt) {
 	grunt.registerTask('full', ['bower', 'concat', 'copy']);
 	
 };
-
