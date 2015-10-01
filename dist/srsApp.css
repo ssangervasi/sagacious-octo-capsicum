@@ -1,4 +1,8 @@
-/*! srsApp - v0.0.0 - 2015-09-30 */
+/*! srsApp - v0.0.0 - 2015-10-01 */
+body {
+	background: #244;
+}
+
 h1 {
 	color: hotpink;
 }

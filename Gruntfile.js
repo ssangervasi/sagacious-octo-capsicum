@@ -35,8 +35,20 @@ module.exports = function(grunt) {
 		},
 		copy: {
 			main: {
-				src: 'src/index.html',
-				dest: 'dist/index.html'
+				files: [
+					{
+						expand: true, 
+						cwd: 'src/',
+						src: ['index.html', '**/*.html'],
+						dest: 'dist/'
+						// ,
+						// filter: function (path){
+						// 	return !/\.html$/.test(path);
+						// }
+					}
+				]
+				// src: 'src/**/*.html',
+				// dest: 'dist/index.html'
 			}
 		}
 		//TODO: uglify, lint, run tests		
