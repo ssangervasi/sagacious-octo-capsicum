@@ -4,11 +4,13 @@ body {
 }
 
 .header h2 {
-	color: #55AA10;
+	color: #445566;
+	margin: .2rem .1rem 0rem .1rem;
 }
 
 .header h3 {
-	color: #55AA55;
+	color: #448866;
+	margin: 0rem .1rem .2rem .1rem;
 }
 
 div.header--main {
@@ -20,6 +22,7 @@ div.header--main {
 
 .header__title {
 	width: 80%;
+	margin: 2rem .1rem .1rem .1rem;
 }
 
 .header__navigation {
