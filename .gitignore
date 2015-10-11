@@ -31,3 +31,6 @@ node_modules
 
 #Temp files
 *~
+
+# Sublime meta
+*.sublime-workspace

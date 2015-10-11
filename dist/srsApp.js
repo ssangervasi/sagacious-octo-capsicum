@@ -1,4 +1,4 @@
-/*! srsApp - v0.0.0 - 2015-10-01 */
+/*! srsApp - v0.0.0 - 2015-10-08 */
 (function(window, document, undefined) {'use strict';
 
 /**
@@ -33194,8 +33194,31 @@ configBlock.$inject = [
 	'$urlRouterProvider'
 ];
 function configBlock($stateProvider, $urlRouterProvider) {
+	console.log('Configged');
 	//Default redirect
 	$urlRouterProvider.otherwise('root');
+	$stateProvider
+		.state('root', {
+			url: '/root',
+			views: {
+				'body': {
+					templateUrl: '/body/template.html'
+				},
+				'header': {
+					templateUrl: '/headers/main/template.html'
+				},
+				'sidebar-left': {
+					templateUrl: '/sidebars/left/template.html'
+				},
+				'sidebar-right': {
+					templateUrl: '/sidebars/right/template.html'
+				}
+			}
+		})
+		;//End state chain
+}
+})();
+
 	/**
 	 * -- State template --
 	 *
@@ -33214,17 +33237,3 @@ function configBlock($stateProvider, $urlRouterProvider) {
 	 *			sates/controllers/stateNameController.js
 	 *		- ...
 	 */
-	$stateProvider
-		.state('root', {
-			url: '/',
-			views: {
-				name: 'body',
-				//controller: 'bodyController',
-				//controllerAs: 'rootCtrl',
-				templateUrl: '/body/template.html'
-			}
-		})
-		;//End state chain
-}
-})();
-
