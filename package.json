@@ -4,7 +4,7 @@
   "description": "Personal website workspace.",
   "main": "Gruntfile.js",
   "scripts": {
-    "static": "node staticPage.js"
+    "start": "node staticPage.js"
   },
   "repository": {
     "type": "git",

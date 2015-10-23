@@ -1,1 +1,1 @@
-web: node static
+web: node staticPage.js
