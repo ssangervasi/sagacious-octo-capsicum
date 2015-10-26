@@ -4,25 +4,26 @@ $font-primary: Arial;
 
 //Temporary
 body {
-	background: $color-primary-4;
+	background: rgb(32, 32, 32);
 	font-family: $font-primary;
+	color: $color-primary-0;
 }
 
 .header h2 {
-	color: $color-primary-1;
+	color: $color-primary-0;
 	margin: .2rem .1rem 0rem .1rem;
 }
 
 .header h3 {
-	color: $color-primary-2;
+	color: $color-complement-2;
 	margin: 0rem .1rem .2rem .1rem;
 }
 
 div.header--main {
 	border: solid .2rem;
-	border-color: $color-primary-3;
+	border-color: $color-primary-2;
 	border-radius: 4px;
-	background: #F0D0F0;
+	background: $color-primary-4;
 }
 
 .header__title {
@@ -33,4 +34,39 @@ div.header--main {
 .header__navigation {
 	min-width: 2rem;
 	width: 5%
+}
+
+/*Color Testing*/
+.color-test {
+	.primary-0 {
+		background: $color-primary-0;
+	}
+	.primary-1 {
+		background: $color-primary-1;
+	}
+	.primary-2 {
+		background: $color-primary-2;
+	}
+	.primary-3 {
+		background: $color-primary-3;
+	}
+	.primary-4 {
+		background: $color-primary-4;
+	}
+
+	.complement-0 {
+		color: $color-complement-0;
+	}
+	.complement-1 {
+		color: $color-complement-1;
+	}
+	.complement-2 {
+		color: $color-complement-2;
+	}
+	.complement-3 {
+		color: $color-complement-3;
+	}
+	.complement-4 {
+		color: $color-complement-4;
+	}
 }

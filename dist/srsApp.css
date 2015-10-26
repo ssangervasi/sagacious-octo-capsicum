@@ -1,20 +1,21 @@
 body {
-  background: #2C2333;
-  font-family: Arial; }
+  background: #202020;
+  font-family: Arial;
+  color: #644E76; }
 
 .header h2 {
-  color: #4E256E;
+  color: #644E76;
   margin: .2rem .1rem 0rem .1rem; }
 
 .header h3 {
-  color: #544063;
+  color: #93915C;
   margin: 0rem .1rem .2rem .1rem; }
 
 div.header--main {
   border: solid .2rem;
-  border-color: #40324A;
+  border-color: #544063;
   border-radius: 4px;
-  background: #F0D0F0; }
+  background: #2C2333; }
 
 .header__title {
   width: 80%;
@@ -23,5 +24,27 @@ div.header--main {
 .header__navigation {
   min-width: 2rem;
   width: 5%; }
+
+/*Color Testing*/
+.color-test .primary-0 {
+  background: #644E76; }
+.color-test .primary-1 {
+  background: #4E256E; }
+.color-test .primary-2 {
+  background: #544063; }
+.color-test .primary-3 {
+  background: #40324A; }
+.color-test .primary-4 {
+  background: #2C2333; }
+.color-test .complement-0 {
+  color: #AFAD70; }
+.color-test .complement-1 {
+  color: #A4A02F; }
+.color-test .complement-2 {
+  color: #93915C; }
+.color-test .complement-3 {
+  color: #6F6D47; }
+.color-test .complement-4 {
+  color: #4C4C32; }
 
 /*# sourceMappingURL=srsApp.css.map */

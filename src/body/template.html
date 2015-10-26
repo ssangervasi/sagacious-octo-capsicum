@@ -1,7 +1,12 @@
 <div class="main-content about-me">
 	<h3>About Me</h3>
-	<p>My name is Sebastian and I'm here to say:</p>
-	<p>yada yada</p>
-	<p>yada yada</p>
-	<p>yada yada</p>
+	<p>Here are some CSS pallette tests</p>
+	<div class="color-test">
+		<div ng-repeat="prim in [0,1,2,3,4]" class="primary-{{prim}}">
+			<span ng-repeat="comp in [0,1,2,3,4]" class="complement-{{comp}}">
+				This is {{comp}} on {{prim}}
+			</span>
+			<br>
+		</div>
+	</div>
 </div>
