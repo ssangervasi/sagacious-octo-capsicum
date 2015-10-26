@@ -1,0 +1,36 @@
+//Gather variables
+@import 'pallette';
+$font-primary: Arial;
+
+//Temporary
+body {
+	background: $color-primary-4;
+	font-family: $font-primary;
+}
+
+.header h2 {
+	color: $color-primary-1;
+	margin: .2rem .1rem 0rem .1rem;
+}
+
+.header h3 {
+	color: $color-primary-2;
+	margin: 0rem .1rem .2rem .1rem;
+}
+
+div.header--main {
+	border: solid .2rem;
+	border-color: $color-primary-3;
+	border-radius: 4px;
+	background: #F0D0F0;
+}
+
+.header__title {
+	width: 80%;
+	margin: 2rem .1rem .1rem .1rem;
+}
+
+.header__navigation {
+	min-width: 2rem;
+	width: 5%
+}

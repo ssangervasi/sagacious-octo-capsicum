@@ -5,6 +5,18 @@ module.exports = function(grunt) {
 		bower: {
 			install: {}
 		},
+		sass: {
+			dist: {
+				options: {
+					sourcemap: 'none',
+					noCache: true
+				},
+				files: {
+					'dist/<%= pkg.name %>.css': 'src/styles/main.scss'
+					// 'dist/srsApp.css': 'src/main.scss'
+				}
+			}
+		},
 		concat: {
 			js: {
 				options: {
@@ -20,18 +32,19 @@ module.exports = function(grunt) {
 				],
 				//Use package.json name for output file
 				dest: 'dist/<%= pkg.name %>.js'
-			},
-			css: {
-				options: {
-					stripBanners: true,
-					banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-									'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
-				},
-				src: [
-					'src/**/*.css'
-				],
-				dest: 'dist/<%= pkg.name %>.css'
 			}
+			// ,
+			// css: {
+			// 	options: {
+			// 		stripBanners: true,
+			// 		banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+			// 						'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
+			// 	},
+			// 	src: [
+			// 		'src/**/*.css'
+			// 	],
+			// 	dest: 'dist/<%= pkg.name %>.css'
+			// }
 		},
 		copy: {
 			main: {
@@ -47,20 +60,20 @@ module.exports = function(grunt) {
 						// }
 					}
 				]
-				// src: 'src/**/*.html',
-				// dest: 'dist/index.html'
 			}
 		}
 		//TODO: uglify, lint, run tests		
 	});
 	/* -- Load tasks -- */
 	grunt.loadNpmTasks('grunt-bower-task');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	/* -- Register tasks for running -- */
 	//Default to Bear Necessities
-	grunt.registerTask('default', ['concat', 'copy']);
+	var defaultTasks = ['sass', 'concat', 'copy'];
+	grunt.registerTask('default', defaultTasks);
 	//Full install, etc.
-	grunt.registerTask('full', ['bower', 'concat', 'copy']);
+	grunt.registerTask('full', ['bower'].concat(defaultTasks));
 	
 };

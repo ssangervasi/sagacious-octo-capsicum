@@ -1,32 +1,27 @@
-/*! srsApp - v0.0.0 - 2015-10-22 */
 body {
-	background: #C0D0F0;
-	font-family: Arial;
-}
+  background: #2C2333;
+  font-family: Arial; }
 
 .header h2 {
-	color: #445566;
-	margin: .2rem .1rem 0rem .1rem;
-}
+  color: #4E256E;
+  margin: .2rem .1rem 0rem .1rem; }
 
 .header h3 {
-	color: #448866;
-	margin: 0rem .1rem .2rem .1rem;
-}
+  color: #544063;
+  margin: 0rem .1rem .2rem .1rem; }
 
 div.header--main {
-	border: solid .2rem;
-	border-color: #9977AA;
-	border-radius: 4px;
-	background: #F0D0F0;
-}
+  border: solid .2rem;
+  border-color: #40324A;
+  border-radius: 4px;
+  background: #F0D0F0; }
 
 .header__title {
-	width: 80%;
-	margin: 2rem .1rem .1rem .1rem;
-}
+  width: 80%;
+  margin: 2rem .1rem .1rem .1rem; }
 
 .header__navigation {
-	min-width: 2rem;
-	width: 5%
-}
+  min-width: 2rem;
+  width: 5%; }
+
+/*# sourceMappingURL=srsApp.css.map */

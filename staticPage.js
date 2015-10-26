@@ -14,5 +14,6 @@ app.get('/', function appGet(req, res) {
 });
 //Listen on chosen port
 app.listen(port, function appListen() {
-	console && console.log('Serving static page on port: ' + port);
+	console.log('Serving static page on port: ', port);
+	console.log('Test config var: ', process.env.TESTVAR);
 });
