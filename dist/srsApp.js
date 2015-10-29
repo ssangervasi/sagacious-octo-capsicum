@@ -1,4 +1,4 @@
-/*! srsApp - v0.0.0 - 2015-10-27 */
+/*! srsApp - v0.0.0 - 2015-10-29 */
 (function(window, document, undefined) {'use strict';
 
 /**
@@ -33195,7 +33195,7 @@ configBlock.$inject = [
 ];
 function configBlock($stateProvider, $urlRouterProvider) {
 	//Default redirect
-	$urlRouterProvider.otherwise('root');
+	$urlRouterProvider.otherwise('/');
 	$stateProvider
 		.state('root', {
 			url: '/',
@@ -33218,12 +33218,12 @@ function configBlock($stateProvider, $urlRouterProvider) {
 			}
 		})
 		.state('root.resume', {
-			url: '/resume',
+			url: 'resume',
 			views: {
-				'body': {
+				'body@': {
 					templateUrl: '/body/resume/template.html'
 				},
-				'header': {
+				'header@': {
 					templateUrl: '/headers/main/template.html'
 				}
 			}
