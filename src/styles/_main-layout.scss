@@ -1,0 +1,40 @@
+.main-layout__content>div {
+	float: left
+}
+
+.main-layout__content--left {
+	width: 20%
+}
+.main-layout__content--center {
+	min-width: 60%
+}
+.main-layout__content--right {
+	width: 20%
+}
+
+.header h2 {
+	color: $color-primary-0;
+	margin: .2rem .1rem 0rem .1rem;
+}
+
+.header h3 {
+	color: $color-complement-2;
+	margin: 0rem .1rem .2rem .1rem;
+}
+
+div.header--main {
+	border: solid .2rem;
+	border-color: $color-primary-2;
+	border-radius: 4px;
+	background: $color-primary-4;
+}
+
+.header__title {
+	width: 80%;
+	margin: 2rem .1rem .1rem .1rem;
+}
+
+.header__navigation {
+	min-width: 2rem;
+	width: 5%
+}

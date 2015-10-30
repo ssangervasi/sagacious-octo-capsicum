@@ -7,12 +7,14 @@
 	<script src="srsApp.js"></script>
 </head>
 <body>
-<div ng-app="srsApp">
-	<div ui-view="header"></div>
-	<div ui-view="body"></div>
-	<div ui-view="sidebar-left"></div>
-	<div ui-view="sidebar-right"></div>
-	<div ui-view="footer"></div>
+<div ng-app="srsApp" class="main-layout">
+	<div ui-view="header" class="main-layout__header"></div>
+	<div class="main-layout__content">
+		<div ui-view="sidebar-left" class="main-layout__content--left"></div>
+		<div ui-view="body" class="main-layout__content--center"></div>
+		<div ui-view="sidebar-right" class="main-layout__content--right"></div>
+	</div>
+	<div ui-view="footer" class="main-layout__footer"></div>
 </div>
 </body>
 </html>

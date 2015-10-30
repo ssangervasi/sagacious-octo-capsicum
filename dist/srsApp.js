@@ -1,4 +1,4 @@
-/*! srsApp - v0.0.0 - 2015-10-29 */
+/*! srsApp - v0.0.0 - 2015-10-30 */
 (function(window, document, undefined) {'use strict';
 
 /**
@@ -33230,4 +33230,36 @@ function configBlock($stateProvider, $urlRouterProvider) {
 		})
 		;//End state chain
 }
+})();
+(function() {
+/**
+ * Naviagation directive
+ */
+angular
+	.module('srsApp')
+	.directive('srsNavigation', Navigation);
+
+Navigation.$inject = [];
+NavigationCtrl.$inject = ['$state'];
+
+function Navigation () {
+	return {
+		restrict: 'E',
+		controller: NavigationCtrl,
+		templateUrl: '/sidebars/navigation/navigation.html',
+		scope: {},
+		bindToController: {
+			baseState: '@'
+		},
+		controllerAs: 'navCtrl'
+	};
+
+}
+
+function NavigationCtrl($state) {
+	var navCtrl = this;
+	navCtrl.stateList = ["root", "root.resume"];
+
+}
+
 })();

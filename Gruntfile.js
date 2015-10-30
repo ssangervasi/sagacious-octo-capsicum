@@ -28,23 +28,12 @@ module.exports = function(grunt) {
 				src: [
 						'lib/angular/angular.js',
 						'lib/**/*.js',
+						'src/srsApp.js',
 						'src/**/*.js'
 				],
 				//Use package.json name for output file
 				dest: 'dist/<%= pkg.name %>.js'
 			}
-			// ,
-			// css: {
-			// 	options: {
-			// 		stripBanners: true,
-			// 		banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-			// 						'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
-			// 	},
-			// 	src: [
-			// 		'src/**/*.css'
-			// 	],
-			// 	dest: 'dist/<%= pkg.name %>.css'
-			// }
 		},
 		copy: {
 			main: {
