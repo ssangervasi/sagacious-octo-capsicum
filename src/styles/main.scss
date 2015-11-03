@@ -1,12 +1,15 @@
 //Gather variables
 @import 'pallette';
 $font-primary: Arial;
+$font-secondary: Arial;
 
 //Temporary
 body {
 	background: rgb(32, 32, 32);
 	font-family: $font-primary;
 	color: $color-primary-0;
-}
+	
+	@import 'main-layout';
+	@import 'navigation';
 
-@import 'main-layout';
+}
