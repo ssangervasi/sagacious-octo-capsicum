@@ -2,10 +2,11 @@
 @import 'pallette';
 $font-primary: Arial;
 $font-secondary: Arial;
+$background-primary: rgb(32, 32, 32);
 
 //Temporary
 body {
-	background: rgb(32, 32, 32);
+	background: $background-primary;
 	font-family: $font-primary;
 	color: $color-primary-0;
 	

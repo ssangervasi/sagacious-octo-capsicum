@@ -1,4 +1,4 @@
-/* -- Application declaration emancipation proclamation demonstration defenstration ruination -- */
+	/* -- Application declaration emancipation proclamation demonstration defenstration ruination -- */
 (function () {
 angular
 	.module('srsApp', ['ui.router'])
@@ -41,6 +41,17 @@ function configBlock($stateProvider, $urlRouterProvider) {
 				},
 				'header@': {
 					templateUrl: '/headers/main/template.html'
+				}
+			}
+		})
+		.state('root.playground', {
+			url: 'playground',
+			views: {
+				'body@': {
+					templateUrl: '/body/playground/template.html'
+				},
+				'header@': {
+					templateUrl: '/headers/playground/template.html'
 				}
 			}
 		})

@@ -1,4 +1,4 @@
-/*! srsApp - v0.0.0 - 2015-10-30 */
+/*! srsApp - v0.0.0 - 2015-11-10 */
 (function(window, document, undefined) {'use strict';
 
 /**
@@ -33228,6 +33228,17 @@ function configBlock($stateProvider, $urlRouterProvider) {
 				}
 			}
 		})
+		.state('root.playground', {
+			url: 'playground',
+			views: {
+				'body@': {
+					templateUrl: '/body/playground/template.html'
+				},
+				'header@': {
+					templateUrl: '/headers/playground/template.html'
+				}
+			}
+		})
 		;//End state chain
 }
 })();
@@ -33258,7 +33269,11 @@ function Navigation () {
 
 function NavigationCtrl($state) {
 	var navCtrl = this;
-	navCtrl.stateList = ["root", "root.resume"];
+	navCtrl.stateList = [
+		"root",
+		"root.resume",
+		"root.playground"
+	];
 
 }
 
