@@ -1,7 +1,9 @@
 //Gather variables
-@import 'pallette';
+@import 'pallette2';
 $font-primary: Arial;
 $font-secondary: Arial;
+$background-primary: rgb(25, 25, 25);
+
 
 body {
 	background: $background-primary;
@@ -10,5 +12,6 @@ body {
 	
 	@import 'main-layout';
 	@import 'navigation';
+	@import 'playground';
 
 }

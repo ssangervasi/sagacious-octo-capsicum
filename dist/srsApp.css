@@ -1,39 +1,8 @@
-/*Color Testing*/
-.color-test .primary-0 {
-  background: #644E76; }
-.color-test .primary-1 {
-  background: #4E256E; }
-.color-test .primary-2 {
-  background: #544063; }
-.color-test .primary-3 {
-  background: #40324A; }
-.color-test .primary-4 {
-  background: #2C2333; }
-.color-test .primary-text-0 {
-  color: #644E76; }
-.color-test .primary-text-1 {
-  color: #4E256E; }
-.color-test .primary-text-2 {
-  color: #544063; }
-.color-test .primary-text-3 {
-  color: #40324A; }
-.color-test .primary-text-4 {
-  color: #2C2333; }
-.color-test .complement-0 {
-  color: #AFAD70; }
-.color-test .complement-1 {
-  color: #A4A02F; }
-.color-test .complement-2 {
-  color: #93915C; }
-.color-test .complement-3 {
-  color: #6F6D47; }
-.color-test .complement-4 {
-  color: #4C4C32; }
-
 body {
   background: #191919;
   font-family: Arial;
-  color: #644E76; }
+  color: #AE8AF5;
+  /*Color Testing*/ }
   body .main-layout__content > div {
     float: left; }
   body .main-layout__content--left {
@@ -44,15 +13,15 @@ body {
     width: 20%; }
   body .header {
     border: solid .2rem;
-    border-color: #4E256E;
+    border-color: #3A04A2;
     border-radius: 4px;
-    background: #544063; }
+    background: #D7CEE8; }
     body .header h2 {
-      color: #93915C;
+      color: #AA9B36;
       font-weight: 500;
       margin: .2rem .1rem 0rem .1rem; }
     body .header h3 {
-      color: #2C2333;
+      color: #15082D;
       margin: .2rem .1rem .2rem .1rem; }
     body .header .header__title {
       margin: .5rem 1rem .5rem 1rem; }
@@ -60,10 +29,42 @@ body {
     font-size: 1rem; }
     body .nav-content a {
       font-family: Arial;
-      color: #A4A02F; }
-    body .nav-content a:visited {
-      color: #93915C; }
-    body .nav-content a:hover {
-      color: #AFAD70; }
+      color: #FFDE00; }
+      body .nav-content a:visited {
+        color: #FFFBE0; }
+      body .nav-content a:hover {
+        color: #FFEF83; }
+      body .nav-content a:active {
+        color: #FFDE00; }
+  body .color-test .primary-0 {
+    background: #AE8AF5; }
+  body .color-test .primary-1 {
+    background: #3A04A2; }
+  body .color-test .primary-2 {
+    background: #D7CEE8; }
+  body .color-test .primary-3 {
+    background: #54388A; }
+  body .color-test .primary-4 {
+    background: #15082D; }
+  body .color-test .primary-text-0 {
+    color: #AE8AF5; }
+  body .color-test .primary-text-1 {
+    color: #3A04A2; }
+  body .color-test .primary-text-2 {
+    color: #D7CEE8; }
+  body .color-test .primary-text-3 {
+    color: #54388A; }
+  body .color-test .primary-text-4 {
+    color: #15082D; }
+  body .color-test .complement-0 {
+    color: #FFEF83; }
+  body .color-test .complement-1 {
+    color: #FFDE00; }
+  body .color-test .complement-2 {
+    color: #FFFBE0; }
+  body .color-test .complement-3 {
+    color: #AA9B36; }
+  body .color-test .complement-4 {
+    color: #050400; }
 
 /*# sourceMappingURL=srsApp.css.map */
