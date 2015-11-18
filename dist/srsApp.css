@@ -31,7 +31,7 @@
   color: #4C4C32; }
 
 body {
-  background: #202020;
+  background: #191919;
   font-family: Arial;
   color: #644E76; }
   body .main-layout__content > div {
@@ -56,12 +56,14 @@ body {
       margin: .2rem .1rem .2rem .1rem; }
     body .header .header__title {
       margin: .5rem 1rem .5rem 1rem; }
-  body a {
-    font-family: Arial;
-    color: #A4A02F; }
-  body a:visited {
-    color: #93915C; }
-  body a:hover {
-    color: #AFAD70; }
+  body .nav-content {
+    font-size: 1rem; }
+    body .nav-content a {
+      font-family: Arial;
+      color: #A4A02F; }
+    body .nav-content a:visited {
+      color: #93915C; }
+    body .nav-content a:hover {
+      color: #AFAD70; }
 
 /*# sourceMappingURL=srsApp.css.map */

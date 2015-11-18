@@ -1,10 +1,15 @@
-a {
-	font-family: $font-secondary;
-	color: $color-complement-1;
-}
-a:visited {
-	color: $color-complement-2;
-}
-a:hover {
-	color: $color-complement-0;
+.nav-content {
+	font-size: 1rem;
+
+	a {
+		font-family: $font-secondary;
+		color: $color-complement-1;
+	}
+	a:visited {
+		color: $color-complement-2;
+	}
+	a:hover {
+		color: $color-complement-0;
+	}
+	
 }

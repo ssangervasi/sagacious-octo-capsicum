@@ -1,4 +1,4 @@
-/*! srsApp - v0.0.0 - 2015-11-10 */
+/*! srsApp - v0.0.0 - 2015-11-17 */
 (function(window, document, undefined) {'use strict';
 
 /**
@@ -33269,11 +33269,7 @@ function Navigation () {
 
 function NavigationCtrl($state) {
 	var navCtrl = this;
-	navCtrl.stateList = [
-		"root",
-		"root.resume",
-		"root.playground"
-	];
+	navCtrl.states = $state.get().slice(1);
 
 }
 

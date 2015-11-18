@@ -25,11 +25,7 @@ function Navigation () {
 
 function NavigationCtrl($state) {
 	var navCtrl = this;
-	navCtrl.stateList = [
-		"root",
-		"root.resume",
-		"root.playground"
-	];
+	navCtrl.states = $state.get().slice(1);
 
 }
 
