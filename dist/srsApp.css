@@ -1,27 +1,27 @@
 body {
   background: #191919;
   font-family: Arial;
-  color: #AE8AF5;
+  color: #644E76;
   /*Color Testing*/ }
   body .main-layout__content > div {
     float: left; }
   body .main-layout__content--left {
-    width: 20%; }
+    width: 15%; }
   body .main-layout__content--center {
-    min-width: 60%; }
+    width: 65%; }
   body .main-layout__content--right {
     width: 20%; }
   body .header {
     border: solid .2rem;
-    border-color: #3A04A2;
+    border-color: #4E256E;
     border-radius: 4px;
-    background: #D7CEE8; }
+    background: #544063; }
     body .header h2 {
-      color: #AA9B36;
+      color: #6F6D47;
       font-weight: 500;
       margin: .2rem .1rem 0rem .1rem; }
     body .header h3 {
-      color: #15082D;
+      color: #2C2333;
       margin: .2rem .1rem .2rem .1rem; }
     body .header .header__title {
       margin: .5rem 1rem .5rem 1rem; }
@@ -29,42 +29,42 @@ body {
     font-size: 1rem; }
     body .nav-content a {
       font-family: Arial;
-      color: #FFDE00; }
+      color: #A4A02F; }
       body .nav-content a:visited {
-        color: #FFFBE0; }
+        color: #93915C; }
       body .nav-content a:hover {
-        color: #FFEF83; }
+        color: #AFAD70; }
       body .nav-content a:active {
-        color: #FFDE00; }
+        color: #A4A02F; }
   body .color-test .primary-0 {
-    background: #AE8AF5; }
+    background: #644E76; }
   body .color-test .primary-1 {
-    background: #3A04A2; }
+    background: #4E256E; }
   body .color-test .primary-2 {
-    background: #D7CEE8; }
+    background: #544063; }
   body .color-test .primary-3 {
-    background: #54388A; }
+    background: #40324A; }
   body .color-test .primary-4 {
-    background: #15082D; }
+    background: #2C2333; }
   body .color-test .primary-text-0 {
-    color: #AE8AF5; }
+    color: #644E76; }
   body .color-test .primary-text-1 {
-    color: #3A04A2; }
+    color: #4E256E; }
   body .color-test .primary-text-2 {
-    color: #D7CEE8; }
+    color: #544063; }
   body .color-test .primary-text-3 {
-    color: #54388A; }
+    color: #40324A; }
   body .color-test .primary-text-4 {
-    color: #15082D; }
+    color: #2C2333; }
   body .color-test .complement-0 {
-    color: #FFEF83; }
+    color: #AFAD70; }
   body .color-test .complement-1 {
-    color: #FFDE00; }
+    color: #A4A02F; }
   body .color-test .complement-2 {
-    color: #FFFBE0; }
+    color: #93915C; }
   body .color-test .complement-3 {
-    color: #AA9B36; }
+    color: #6F6D47; }
   body .color-test .complement-4 {
-    color: #050400; }
+    color: #4C4C32; }
 
 /*# sourceMappingURL=srsApp.css.map */

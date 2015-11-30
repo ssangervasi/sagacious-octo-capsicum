@@ -1,4 +1,4 @@
-/*! srsApp - v0.0.0 - 2015-11-17 */
+/*! srsApp - v0.0.02015-11-29 */
 (function(window, document, undefined) {'use strict';
 
 /**
@@ -33195,10 +33195,11 @@ configBlock.$inject = [
 ];
 function configBlock($stateProvider, $urlRouterProvider) {
 	//Default redirect
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/resume');
 	$stateProvider
 		.state('root', {
 			url: '/',
+			abstract: true,
 			views: {
 				'body': {
 					templateUrl: '/body/template.html'
@@ -33269,7 +33270,13 @@ function Navigation () {
 
 function NavigationCtrl($state) {
 	var navCtrl = this;
-	navCtrl.states = $state.get().slice(1);
+	navCtrl.states = [];
+	// For now, just pulling out all non-abstract states
+	angular.forEach($state.get(), function (nextState) {
+		if (nextState && !nextState.abstract) {
+			navCtrl.states.push(nextState);
+		}
+	});
 
 }
 

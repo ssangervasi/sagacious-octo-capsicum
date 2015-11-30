@@ -25,7 +25,13 @@ function Navigation () {
 
 function NavigationCtrl($state) {
 	var navCtrl = this;
-	navCtrl.states = $state.get().slice(1);
+	navCtrl.states = [];
+	// For now, just pulling out all non-abstract states
+	angular.forEach($state.get(), function (nextState) {
+		if (nextState && !nextState.abstract) {
+			navCtrl.states.push(nextState);
+		}
+	});
 
 }
 

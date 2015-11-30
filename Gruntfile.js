@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 			js: {
 				options: {
 					stripBanners: true,
-					banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+					banner: '/*! <%= pkg.name %> - v<%= pkg.version%>' +
 									'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
 				},
 				//Include all javascript files

@@ -11,10 +11,11 @@ configBlock.$inject = [
 ];
 function configBlock($stateProvider, $urlRouterProvider) {
 	//Default redirect
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/resume');
 	$stateProvider
 		.state('root', {
 			url: '/',
+			abstract: true,
 			views: {
 				'body': {
 					templateUrl: '/body/template.html'

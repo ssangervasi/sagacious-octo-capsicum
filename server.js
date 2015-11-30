@@ -12,3 +12,8 @@ app.use(express.static(__dirname + '/dist'));
 app.get('/', function appGet(req, res) {
 	res.sendFile('index.html');
 });
+//Listen on chosen port
+app.listen(port, function appListen() {
+	console.log('Serving static page on port: ', port);
+	console.log('Test config var: ', process.env.TESTVAR);
+});
