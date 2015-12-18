@@ -7,7 +7,7 @@ var app = express();
 var port = process.env.PORT || 5000;
 app.set('port', port);
 //
-app.use(express.static(__dirname + '/dist'));
+// app.use(express.static(__dirname + '/dist'));
 //Server static file
 app.get('/', function appGet(req, res) {
 	res.sendFile('index.html');
