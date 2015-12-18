@@ -7,11 +7,11 @@ var app = express();
 var port = process.env.PORT || 5000;
 app.set('port', port);
 //
-// app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist'));
 //Server static file
-app.get('/', function appGet(req, res) {
-	res.sendFile('index.html');
-});
+// app.get('/', function appGet(req, res) {
+// 	res.sendFile('index.html');
+// });
 //Listen on chosen port
 app.listen(port, function appListen() {
 	console.log('Serving static page on port: ', port);
