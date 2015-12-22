@@ -2,7 +2,7 @@
 	<div>
 		<h3>Technical Skills</h3>
 		<div>Languages: Java, Javascript, C, C++, Python, HTML, Apex, SQL.</div>
-		<div>Frameworks: AngularJS, jQuery, Node.js, Visualforce. </div>
+		<div>We: AngularJS, jQuery, Node.js, Visualforce. </div>
 		<div>General: Git w/ Bitbucket/Github, Grunt, Agile development w/ Jira.</div>
 	</div>
 	<div>
@@ -18,7 +18,7 @@
 		</div>
 		<ul>
 			<li>
-			Contributing to an enterprise application with a complex data model and  highly-customizable user experience,  built on the Force.com platform.
+			Contributing to an enterprise application with a complex data model and  highly-customizable user experience, built on the Force.com platform.
 			</li>
 			<li>
 			Working with the full stack: updates to the data model, development of back-end code in Apex, and UI improvements in HTML/Visualforce and Javascript.
@@ -79,8 +79,12 @@
 				<td></td>
 			</tr>
 			<tr>
-				<td>Computer Science: Computer Organization & Design, Discrete Structures, Operating Systems, Analysis of Algorithms, Artificial Intelligence.</td>
-				<td>Mathematics: Linear Algebra, Number Theory, Probability,  Abstract Algebra , Differential Equations, Mathematical Biology, Real Analysis.</td>
+				<td>Computer Science:</td>
+				<td>Mathematics:</td>
+			</tr>	
+			<tr ng-repeat="course in courses">
+				<td>{{course[0]}}</td>
+				<td>{{course[1]}}</td>
 			</tr>
 		</table>
 	</div>

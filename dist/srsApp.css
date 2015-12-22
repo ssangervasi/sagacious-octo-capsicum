@@ -33,6 +33,11 @@ body {
     margin-bottom: .2rem; }
   body .main-content.resume h4 {
     margin-top: .2rem; }
+  body .main-content.resume div > span:last-child {
+    float: right;
+    font-style: italic; }
+  body .main-content.resume table {
+    text-align: left; }
   body .nav-content {
     font-size: 1rem; }
     body .nav-content a {

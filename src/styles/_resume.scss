@@ -5,4 +5,12 @@
 	h4 {
 		margin-top: .2rem;
 	}
+
+	div>span:last-child {
+		float: right;
+		font-style: italic;
+	}
+	table {
+		text-align: left;
+	}
 }

@@ -38,7 +38,18 @@ function configBlock($stateProvider, $urlRouterProvider) {
 			url: 'resume',
 			views: {
 				'body@': {
-					templateUrl: '/body/resume/template.html'
+					templateUrl: '/body/resume/template.html',
+					controller: ['$scope', function ($scope) {
+						$scope.courses = [
+							["Computer Organization & Design", "Linear Algebra"],
+							["Discrete Structures", "Number Theory"],
+							["Operating Systems", "Probability"],
+							["Analysis of Algorithms", "Abstract Algebra"],
+							["Artificial Intelligence", "Differential Equations"],
+							["", "Mathematical Biology"],
+							["", "Real Analysis"]
+						];
+					}]
 				},
 				'header@': {
 					templateUrl: '/headers/main/template.html'
