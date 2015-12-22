@@ -1,7 +1,7 @@
 //Gather variables
-// @import 'pallette1';
-// @import 'pallette2';
-@import 'pallette';
+// @import 'pallette';
+@import 'pallette2';
+// @import 'pallette3';
 $font-primary: Arial;
 $font-secondary: Arial;
 $background-primary: rgb(25, 25, 25);
@@ -10,9 +10,10 @@ $background-primary: rgb(25, 25, 25);
 body {
 	background: $background-primary;
 	font-family: $font-primary;
-	color: $color-primary-0;
+	color: $color-primary-2;
 	
 	@import 'main-layout';
+	@import 'resume';
 	@import 'navigation';
 	@import 'playground';
 

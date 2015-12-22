@@ -12,20 +12,29 @@
 	width: 20%
 }
 
+.main-content {
+	h3 {
+		color: $color-complement-0;
+	}
+	h4 {
+		color: $color-complement-3;
+	}
+}
+
 .header {
 	border: solid .2rem;
 	border-color: $color-primary-1;
 	border-radius: 4px;
-	background: $color-primary-2;
+	background: $color-complement-3;
 
 	h2 {
-		color: $color-complement-3;
-		font-weight: 500;
+		color: $color-complement-4;
 		margin: .2rem .1rem 0rem .1rem;
 	}
 
 	h3 {
-		color: $color-primary-4;
+		color: $color-primary-3;
+		font-weight: 500;
 		margin: .2rem .1rem .2rem .1rem;
 	}
 

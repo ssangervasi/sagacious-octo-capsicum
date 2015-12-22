@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				options: {
-					sourcemap: 'none',
+					// sourcemap: 'none',
 					noCache: true
 				},
 				files: {

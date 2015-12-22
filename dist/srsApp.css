@@ -1,7 +1,7 @@
 body {
   background: #191919;
   font-family: Arial;
-  color: #644E76;
+  color: #D7CEE8;
   /*Color Testing*/ }
   body .main-layout__content > div {
     float: left; }
@@ -11,60 +11,68 @@ body {
     width: 65%; }
   body .main-layout__content--right {
     width: 20%; }
+  body .main-content h3 {
+    color: #FFEF83; }
+  body .main-content h4 {
+    color: #AA9B36; }
   body .header {
     border: solid .2rem;
-    border-color: #4E256E;
+    border-color: #3A04A2;
     border-radius: 4px;
-    background: #544063; }
+    background: #AA9B36; }
     body .header h2 {
-      color: #6F6D47;
-      font-weight: 500;
+      color: #050400;
       margin: .2rem .1rem 0rem .1rem; }
     body .header h3 {
-      color: #2C2333;
+      color: #54388A;
+      font-weight: 500;
       margin: .2rem .1rem .2rem .1rem; }
     body .header .header__title {
       margin: .5rem 1rem .5rem 1rem; }
+  body .main-content.resume h3, body .main-content.resume h4 {
+    margin-bottom: .2rem; }
+  body .main-content.resume h4 {
+    margin-top: .2rem; }
   body .nav-content {
     font-size: 1rem; }
     body .nav-content a {
       font-family: Arial;
-      color: #A4A02F; }
+      color: #FFDE00; }
       body .nav-content a:visited {
-        color: #93915C; }
+        color: #FFFBE0; }
       body .nav-content a:hover {
-        color: #AFAD70; }
+        color: #FFEF83; }
       body .nav-content a:active {
-        color: #A4A02F; }
+        color: #FFDE00; }
   body .color-test .primary-0 {
-    background: #644E76; }
+    background: #AE8AF5; }
   body .color-test .primary-1 {
-    background: #4E256E; }
+    background: #3A04A2; }
   body .color-test .primary-2 {
-    background: #544063; }
+    background: #D7CEE8; }
   body .color-test .primary-3 {
-    background: #40324A; }
+    background: #54388A; }
   body .color-test .primary-4 {
-    background: #2C2333; }
+    background: #15082D; }
   body .color-test .primary-text-0 {
-    color: #644E76; }
+    color: #AE8AF5; }
   body .color-test .primary-text-1 {
-    color: #4E256E; }
+    color: #3A04A2; }
   body .color-test .primary-text-2 {
-    color: #544063; }
+    color: #D7CEE8; }
   body .color-test .primary-text-3 {
-    color: #40324A; }
+    color: #54388A; }
   body .color-test .primary-text-4 {
-    color: #2C2333; }
+    color: #15082D; }
   body .color-test .complement-0 {
-    color: #AFAD70; }
+    color: #FFEF83; }
   body .color-test .complement-1 {
-    color: #A4A02F; }
+    color: #FFDE00; }
   body .color-test .complement-2 {
-    color: #93915C; }
+    color: #FFFBE0; }
   body .color-test .complement-3 {
-    color: #6F6D47; }
+    color: #AA9B36; }
   body .color-test .complement-4 {
-    color: #4C4C32; }
+    color: #050400; }
 
 /*# sourceMappingURL=srsApp.css.map */
