@@ -1,7 +1,9 @@
 <div class="nav-content">
 	<h3>Site</h3>
 	<ul>
-		<li ng-repeat="state in navCtrl.states"><a href="" ui-sref="{{state.name}}">{{state.url}}</a></li>
+		<li ng-repeat="state in navCtrl.states">
+			<a href="" ui-sref="{{state.name}}">{{state.data.displayName || state.url}}</a>
+		</li>
 	</ul>
 	<!-- Other sites -->
 	<h3>See also</h3>

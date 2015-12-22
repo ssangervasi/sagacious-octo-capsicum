@@ -33195,15 +33195,12 @@ configBlock.$inject = [
 ];
 function configBlock($stateProvider, $urlRouterProvider) {
 	//Default redirect
-	$urlRouterProvider.otherwise('/resume');
+	$urlRouterProvider.otherwise('/about');
 	$stateProvider
 		.state('root', {
 			url: '/',
 			abstract: true,
 			views: {
-				'body': {
-					templateUrl: '/body/template.html'
-				},
 				'header': {
 					templateUrl: '/headers/main/template.html'
 				},
@@ -33218,7 +33215,21 @@ function configBlock($stateProvider, $urlRouterProvider) {
 				}
 			}
 		})
+		.state('root.about', {
+			data: {
+				displayName: 'About'
+			},
+			url: 'about',
+			views: {
+				'body@': {
+					templateUrl: '/body/template.html'
+				}
+			}
+		})
 		.state('root.resume', {
+			data: {
+				displayName: 'Resume'
+			},
 			url: 'resume',
 			views: {
 				'body@': {
@@ -33241,6 +33252,9 @@ function configBlock($stateProvider, $urlRouterProvider) {
 			}
 		})
 		.state('root.playground', {
+			data: {
+				displayName: 'Playground'
+			},
 			url: 'playground',
 			views: {
 				'body@': {

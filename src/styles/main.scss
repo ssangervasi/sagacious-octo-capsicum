@@ -12,6 +12,20 @@ body {
 	font-family: $font-primary;
 	color: $color-primary-2;
 	
+	a {
+		font-family: $font-secondary;
+		color: $color-primary-0;
+		&:visited {
+			color: $color-primary-3;
+		}
+		&:hover {
+			color: $color-complement-0;
+		}
+		&:active {
+			color: $color-complement-3;
+		}
+	}
+
 	@import 'main-layout';
 	@import 'resume';
 	@import 'navigation';

@@ -3,6 +3,18 @@ body {
   font-family: Arial;
   color: #D7CEE8;
   /*Color Testing*/ }
+  body a {
+    font-family: Arial;
+    color: #AE8AF5; }
+    body a:visited {
+      color: #54388A; }
+    body a:hover {
+      color: #FFEF83; }
+    body a:active {
+      color: #AA9B36; }
+  body .main-layout {
+    max-width: 1080px;
+    margin: 0 auto; }
   body .main-layout__content > div {
     float: left; }
   body .main-layout__content--left {
@@ -40,14 +52,14 @@ body {
     text-align: left; }
   body .nav-content {
     font-size: 1rem; }
-    body .nav-content a {
+    body .nav-content a.links--internal {
       font-family: Arial;
       color: #FFDE00; }
-      body .nav-content a:visited {
+      body .nav-content a.links--internal:visited {
         color: #FFFBE0; }
-      body .nav-content a:hover {
+      body .nav-content a.links--internal:hover {
         color: #FFEF83; }
-      body .nav-content a:active {
+      body .nav-content a.links--internal:active {
         color: #FFDE00; }
   body .color-test .primary-0 {
     background: #AE8AF5; }
